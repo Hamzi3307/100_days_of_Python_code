@@ -20,7 +20,6 @@ class Snake :
         seg.color("white")
         seg.penup()
         seg.goto(position)
-        seg.speed("fastest")
         self.segments.append(seg)
         
     def extend(self):
