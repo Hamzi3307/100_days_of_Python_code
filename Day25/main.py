@@ -8,6 +8,14 @@ gray_data = data[data["Primary Fur Color"] == "Gray"]
 black_data = data[data["Primary Fur Color"] == "Black"]
 cinnamon_data = data[data["Primary Fur Color"] == "Cinnamon"]
 
-print(len(gray_data))
-print(len(cinnamon_data))
-print(len(black_data))
+count_gray = len(gray_data)
+count_red = len(cinnamon_data)
+count_black = len(black_data)
+
+data_dict = {
+    "Fur Color": ["Gray", "Red", "Black"],
+    "Count": [count_gray, count_red, count_black]
+}
+
+data = pd.DataFrame(data_dict)
+data.to_csv("Day25/data.csv")
