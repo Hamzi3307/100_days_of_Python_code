@@ -30,7 +30,7 @@ cal.grid(column=2, row=2)
 def clicked():
     if entry.get().title() == "Exit":
         # code to stop the loop 
-        pass 
+        pass
     try:
         m = int(entry.get())
     except:
